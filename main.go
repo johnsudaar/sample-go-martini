@@ -29,6 +29,7 @@ func main() {
 	m.Get("/crash", func(r render.Render) {
 		fmt.Println("<h1> Hi !!!! </h1>")
 		panic("Bye !")
+		os.Exit(1)
 	})
 
 	port := "3000"
