@@ -22,7 +22,13 @@ func main() {
 	))
 
 	m.Get("/", func(r render.Render) {
+		fmt.Println("<h1> Hi !!!! </h1>")
 		r.HTML(200, "index", nil)
+	})
+	
+	m.Get("/crash", func(r render.Render) {
+		fmt.Println("<h1> Hi !!!! </h1>")
+		panic("Bye !")
 	})
 
 	port := "3000"
