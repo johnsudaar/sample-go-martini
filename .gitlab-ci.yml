@@ -21,4 +21,4 @@ unit_tests:
 build:
   stage: build
   script:
-    - make
+    - go build
