@@ -22,3 +22,9 @@ build:
   stage: build
   script:
     - go build
+fail:
+  stage: build
+  script:
+    - sleep 3 && exit 2
+
+
